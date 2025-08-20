@@ -19,3 +19,9 @@ jobs:
 
     - name: Install dependencies
       run: make
+
+    - name: Upload v86 build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: v86-build
+        path: build/
