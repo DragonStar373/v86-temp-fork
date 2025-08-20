@@ -20,6 +20,9 @@ jobs:
     - name: Install dependencies
       run: make
 
+    - name: Install dependencies fr this time
+      run: make all
+
     - name: Upload v86 build artifacts
       uses: actions/upload-artifact@v4
       with:
